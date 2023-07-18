@@ -1,3 +1,4 @@
+import { Header } from "@/components/Home/Header";
 import { MainForm } from "@/components/MainForm";
 
 export default function Home() {
