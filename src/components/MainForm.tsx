@@ -27,13 +27,15 @@ export function MainForm() {
     resolver: zodResolver(formSchema),   
   })
 
-  const { finalVideo } = useVideosStore()
+  const { finalVideo, reset } = useVideosStore()
 
   async function handleGenerate(data: FormSchema) {
     setIsTranscribing(true)
     console.log(finalVideo)      
 
     setIsTranscribing(false)
+
+    reset()
   }
 
   function handleUploaded(videos: Map<string, Video>) {
