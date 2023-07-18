@@ -1,12 +1,10 @@
-
-
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { useState } from 'react'
 import { UploadVideosStep } from './UploadVideosStep'
 import { Video } from '@/hooks/useVideos'
-import { Mic2 } from 'lucide-react'
+import { useVideosStore } from '@/stores/VideoStore'
 
 const formSchema = z.object({
   transcriptionPrompt: z.string(),
@@ -19,7 +17,7 @@ export function MainForm() {
   const [isTranscribing, setIsTranscribing] = useState(false)
   const [step, setStep] = useState<'upload' | 'transcribe' | 'generate'>(
     'upload',
-  )
+  ) 
 
   const {
     register,
@@ -29,9 +27,11 @@ export function MainForm() {
     resolver: zodResolver(formSchema),   
   })
 
+  const { finalVideo } = useVideosStore()
+
   async function handleGenerate(data: FormSchema) {
     setIsTranscribing(true)
-    console.log('teste')      
+    console.log(finalVideo)      
 
     setIsTranscribing(false)
   }
