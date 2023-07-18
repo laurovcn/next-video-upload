@@ -2213,6 +2213,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@phosphor-icons/react@^2.0.6":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@phosphor-icons/react/-/react-2.0.10.tgz#dcf2f6dabd42bf9156be38caf59d4c818af2b817"
+  integrity sha512-q5ITPNFhmEiYZLZOvEhjo2phlfxoOmit7vE1tBYMxcMqnZX2vdbMw3deDE7wCegpBKM/q/p39BJmhhoPcjZyCg==
+
 "@pkgr/utils@^2.3.1":
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/@pkgr/utils/-/utils-2.4.2.tgz#9e638bbe9a6a6f165580dc943f138fd3309a2cbc"
@@ -2693,6 +2698,11 @@
   dependencies:
     "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
+
+"@wcj/generate-password@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@wcj/generate-password/-/generate-password-1.0.3.tgz#3010d51adfc4b8d3da30cc9fc0debb710968db18"
+  integrity sha512-KhpF9qfDm6nBCeG5o5YfViD+KZRo9ev0jTqu3TCutchf0iNrKF5Gawyx0C9KOkyHp3y8R7SQ9IBoInQVstCBdA==
 
 "@zag-js/element-size@0.3.2":
   version "0.3.2"

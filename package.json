@@ -24,6 +24,8 @@
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "autoprefixer": "10.4.14",
+    "@phosphor-icons/react": "^2.0.6",
+    "@wcj/generate-password": "^1.0.3",
     "axios": "^1.4.0",
     "chalk": "5.2.0",
     "encoding": "0.1.13",
