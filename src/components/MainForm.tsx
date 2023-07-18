@@ -58,9 +58,8 @@ export function MainForm() {
             type="submit"
             disabled={isTranscribing}
             className="mt-2 inline-flex cursor-pointer items-center justify-center gap-2 rounded bg-sky-500 px-4 py-3 text-sm font-medium text-white hover:bg-sky-600 disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            <Mic2 className="h-4 w-4 text-white" />
-            Transcrever {videos.size} vídeos
+          >            
+            Enviar feedback - {videos.size} Vídeos
           </button>
         </div>
       )}
